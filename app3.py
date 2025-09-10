@@ -60,12 +60,13 @@ l.metric(label="Balance ⚖",value= f" ${round(balance,2)}",delta=round(balance/
 col1,col2 = st.columns(2)
 with col1:
     fig1=plt.figure(figsize=(9,8))
-    sns.barplot(data=data,y="age",x="marital",palette="mako")
+    sns.barplot(data=data,y="age",x="marital",palette="pastel")
     st.pyplot(fig1)
 with col2:
     fig2=plt.figure(figsize=(9,8))
-    sns.histplot(data=data,x="age",palette="pastel")
+    sns.histplot(data=data,x="age",palette="Oranges")
     st.pyplot(fig2)
+
 
 
 
